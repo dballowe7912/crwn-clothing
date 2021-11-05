@@ -19,6 +19,7 @@ class SignUp extends Component {
         }
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
     }
 
     handleSubmit = async event => {
@@ -61,8 +62,8 @@ class SignUp extends Component {
                 <span>Sign up with your email and password</span>
                 <form className='sign-up-form' onSubmit={this.handleSubmit}>
                     <FormInput
-                        tyoe='text'
-                        name='display-name'
+                        type='text'
+                        name='displayName'
                         value={displayName}
                         onChange={this.handleChange}
                         label='Display Name'
